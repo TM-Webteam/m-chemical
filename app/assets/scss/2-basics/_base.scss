@@ -185,6 +185,8 @@ a,button[type="submit"] {
 	width: 100%;
 	margin: 0 auto;
 	padding: 70px 30px;
+  position: relative;
+  z-index: 9;
 	@media #{$sp} {
 		padding: 35px 15px;
 	}
@@ -194,6 +196,8 @@ a,button[type="submit"] {
   width: 100%;
   margin: 0 auto;
   padding: 70px 0;
+  position: relative;
+  z-index: 9;
   @media #{$sp} {
     padding: 35px 15px;
   }
@@ -235,7 +239,7 @@ a,button[type="submit"] {
 /*** その他 ***/
 
 main {
-  padding-top: 140px;
+  padding-top: 141px;
   @media #{$sp} {
     padding-top: 60px;
   }
@@ -298,3 +302,34 @@ main {
   }
 }
 
+.taC {
+  text-align: center;
+}
+
+.bgB {
+  background: #005BAC;
+}
+
+.bgLB {
+  background: #268CBF;
+}
+
+.bgG {
+  background: #009E89;
+}
+
+.bg-LB {
+  background: #EAEFF1;
+}
+
+.cB {
+  color: #005BAC;
+}
+
+.cLB {
+  color: #268CBF;
+}
+
+.cG {
+  color: #009E89;
+}

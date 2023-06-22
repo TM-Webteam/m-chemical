@@ -33,10 +33,30 @@ $(document).ready(function() {
     offset: 120,　//初期値
     delay: 0,　//初期値
     anchor: 'top-bottom', //初期値
-    duration: 800,　//初期値　400
+    duration: 1000,　//初期値　400
     easing: 'ease',　//初期値
     once: true,　//初期値　false
   });
+
+  //---------------------------------
+  // SP アコーディオン
+  //---------------------------------
+  $('.accordion.active').next().show();
+  $(".accordion").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("active");
+    $('.accordion').not($(this)).next().slideUp();
+    $('.accordion.active').not($(this)).removeClass("active");
+  });
+
+  //---------------------------------
+  // 波紋
+  //---------------------------------
+  $('#ripple01, #ripple02, #ripple03').ripples({ //波紋をつける要素を指定
+		resolution: 500, //波紋が広がる速さ
+		dropRadius: 30, //波紋の大きさ
+		perturbance: 0.02 //波紋の揺れの量
+	});
 
 });
 
@@ -159,24 +179,25 @@ $(document).ready(function(){
 //　バナー　追従
 //--------------------------------------
 
-$(function(){
-  var scrollStart = $('.show').offset().top;
-  var scrollEnd = $('.hide').offset().top;
-  var distance = 0;
+// $(function(){
+//   var scrollStart = $('.show').offset().top;
+//   var scrollEnd = $('.hide').offset().top;
+//   var distance = 0;
 
-  $(document).scroll(function(){
-    distance = $(this).scrollTop();
+//   $(document).scroll(function(){
+//     distance = $(this).scrollTop();
 
-    if (scrollStart <= distance) {
-      $('.floating').addClass('fixed');
-    } else if (scrollStart >= distance) {
-      $('.floating').removeClass('fixed');
-    }
+//     if (scrollStart <= distance) {
+//       $('.floating').addClass('fixed');
+//     } else if (scrollStart >= distance) {
+//       $('.floating').removeClass('fixed');
+//     }
 
-    if (scrollEnd <= distance) {
-      $('.floating').fadeOut();
-    } else{
-      $('.floating').fadeIn();
-    }
-  });      
-});
+//     if (scrollEnd <= distance) {
+//       $('.floating').fadeOut();
+//     } else{
+//       $('.floating').fadeIn();
+//     }
+//   });      
+// });
+

@@ -4,3 +4,196 @@
   ----------------
 */
 
+.brand-circle {
+  border: 7px solid #EEAA41;
+  border-radius: 50%;
+  width: 940px;
+  height: 940px;
+  @media #{$sp} {
+    border: 4px solid #EEAA41;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.lineup {
+  background: url("../img/common/bg-lineup.webp") 0 100% / cover no-repeat;
+  position: relative;
+  @media #{$sp} {
+    background: url("../img/common/bg-lineup-sp.webp") 0 100% / 100% no-repeat;
+    .containers {
+      padding: 35px 15px 200px;
+    }
+  }
+  .brand-circle {
+    position: absolute;
+    top: 30px;
+    right: -50%;
+  }
+  .ttl-secondary,.lead {
+    text-align: left;
+  }
+  .card {
+    &__box {
+      display: block;
+      width: calc(100% / 3 - 20px);
+      box-shadow: 0 0 10px rgba(0,0,0,0.16);
+      text-align: center;
+      background: #fff;
+      padding: 30px 40px 40px;
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto;
+        padding: 15px 20px 20px;
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+      &:nth-child(1) {
+        border-top: 2px solid #005BAC;
+      }
+      &:nth-child(2) {
+        border-top: 2px solid #268CBF;
+      }
+      &:nth-child(3) {
+        border-top: 2px solid #0996A2;
+      }
+      &--sub {
+        line-height: 1.5;
+        height: 50px;
+        margin-bottom: 10px;
+        @media #{$sp} {
+          height: auto;
+        }
+      }
+      &--ttl {
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        @media #{$sp} {
+          font-size: 18px;
+          padding-bottom: 15px;
+        }
+      }
+      &--txt {
+        padding-top: 30px;
+        text-align: left;
+        @media #{$sp} {
+          padding-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+.product {
+  position: relative;
+  .brand-circle {
+    position: absolute;
+    top: 75%;
+    left: -450px;
+    @media #{$sp} {
+      top: 65%;
+      left: -120px;
+    }
+  }
+  .item {
+    gap: 40px 30px;
+    @media #{$sp} {
+      gap: 15px;
+    }
+    &__box {
+      background: #fff;
+      width: calc(100% / 3 - 20px);
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: ease .2s;
+      @media #{$sp} {
+        width: calc(100% / 2 - 10px);
+        padding: 10px 5px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 15px;
+        margin: auto;
+        width: 27px;
+        height: 27px;
+        background: url("../img/common/arrow01.svg") 50% / contain no-repeat;
+        transition: all .3s;
+        z-index: 5;
+        @media #{$sp} {
+          width: 20px;
+          height: 20px;
+          right: 5px;
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background: #5e7688;
+        width: 100%;
+        height: 100%;
+        transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+        transform: scale(0, 1);
+        transform-origin: right top;
+      }
+      img {
+        width: 60px;
+        border-radius: 18px;
+        transition: all .5s;
+        position: relative;
+        z-index: 3;
+        @media #{$sp} {
+          width: 30px;
+        }
+      }
+      span {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.4;
+        position: relative;
+        z-index: 3;
+        transition: all .3s;
+        @media #{$sp} {
+          font-size: 12px;
+        }
+      }
+      &:hover {
+        opacity: 1;
+        img {
+          border-radius: 50%;
+        }
+        span {
+          color: #fff;
+        }
+        &::before {
+          background: url("../img/common/arrow01-w.svg") 50% / contain no-repeat;
+        }
+        &::after {
+          transform-origin: left top;
+          transform: scale(1, 1);
+        }
+      }
+    }
+  }
+}
+
+.guidance {
+  background: url("../img/common/bg-guidance.webp") 100% 50% / cover no-repeat;
+  .ttl-secondary {
+    font-size: 26px;
+    margin-bottom: 40px;
+    @media #{$sp} {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}
