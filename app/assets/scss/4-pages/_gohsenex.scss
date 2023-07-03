@@ -1,0 +1,59 @@
+/*
+  ----------------
+  ゴーセネックス™
+  ----------------
+*/
+
+.gohsenex {
+  overflow: hidden;
+  .hero-b {
+    &__mv {
+      background: url("../img/gohsenex/bg-hero.webp") 50% / cover no-repeat;
+    }
+  }
+  .feature {
+    .card {
+      margin-bottom: 70px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+      &__box {
+        width: calc(100% / 3 - 20px);
+        background: #fff;
+        padding: 30px;
+        @media #{$sp} {
+          width: 100%;
+          padding: 15px;
+        }
+        &--ttl {
+          font-size: 20px;
+          font-weight: bold;
+          color: #268CBF;
+          text-align: center;
+          margin-bottom: 20px;
+          @media #{$sp} {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+          span {
+            display: block;
+            font-size: 16px;
+            color: #000;
+            @media #{$sp} {
+              font-size: 14px;
+            }
+          }
+        }
+        &--txt {
+          font-weight: 500;
+          small {
+            display: block;
+            margin-top: 10px;
+            font-size: 10px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -49,15 +49,6 @@ $(document).ready(function() {
     $('.accordion.active').not($(this)).removeClass("active");
   });
 
-  //---------------------------------
-  // 波紋
-  //---------------------------------
-  $('#ripple01, #ripple02, #ripple03').ripples({ //波紋をつける要素を指定
-		resolution: 500, //波紋が広がる速さ
-		dropRadius: 30, //波紋の大きさ
-		perturbance: 0.02 //波紋の揺れの量
-	});
-
 });
 
 

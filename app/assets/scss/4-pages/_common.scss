@@ -4,6 +4,125 @@
   ----------------
 */
 
+.hero-b {
+  .containers-full {
+    padding: 0;
+  }
+  &__box {
+    width: 40%;
+    padding: 30px;
+    height: 430px;
+    background: #fff;
+    @media #{$sp} {
+      width: 100%;
+      padding: 15px;
+      height: auto;
+    }
+    &.core {
+      text-align: left;
+      @media #{$sp} {
+        text-align: center;
+      }
+    }
+    &>div {
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
+    &--sub {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      @media #{$sp} {
+        font-size: 16px;
+        margin-bottom: 15px;
+
+      }
+      span {
+        display: inline-block;
+        border-bottom: 1px solid #35AA59;
+      }
+    }
+    &--txt {
+      @media #{$sp} {
+        font-size: 13px;
+      }
+    }
+    .more {
+      padding: 15px;
+      margin: 30px 0 0;
+      width: 380px;
+      @media #{$sp} {
+        margin: 15px auto 0;
+        width: 85%;
+      }
+    }
+  }
+  &__mv {
+    width: 60%;
+    @media #{$sp} {
+      width: 100%;
+      height: 150px;
+    }
+  }
+}
+
+.anchor {
+  .containers {
+    padding: 50px 15px 20px;
+    @media #{$sp} {
+      padding: 15px;
+    }
+  }
+  .item {
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.11);
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 30px 80px;
+    @media #{$sp} {
+      width: 100%;
+      padding: 15px 15px 20px;
+      gap: 15px 40px;
+    }
+    li {
+      a {
+        &.inner {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+            margin: auto;
+            width: 6px;
+            height: 6px;
+            border: 2px solid;
+            border-color:  transparent transparent #35AA59 #35AA59;
+            transform: rotate(-45deg);
+            transition: all .3s;
+            @media #{$sp} {
+              bottom: -5px;
+            }
+          }
+        }
+        &:hover {
+          opacity: 1;
+          color: #35AA59;
+          &.inner::before {
+            bottom: -15px;
+            @media #{$sp} {
+              bottom: -10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .brand-circle {
   border: 7px solid #EEAA41;
   border-radius: 50%;
@@ -103,6 +222,14 @@
     @media #{$sp} {
       gap: 15px;
     }
+    &::after {
+      content:"";
+      display: block;
+      width: calc(100% / 3 - 20px);
+      @media #{$sp} {
+        width: calc(100% / 2 - 10px);
+      }
+    }
     &__box {
       background: #fff;
       width: calc(100% / 3 - 20px);
@@ -182,6 +309,12 @@
           transform: scale(1, 1);
         }
       }
+    }
+  }
+  &__btn {
+    margin-top: 60px;
+    @media #{$sp} {
+      margin-top: 30px;
     }
   }
 }

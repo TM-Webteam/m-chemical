@@ -1,0 +1,28 @@
+/*
+  ----------------
+  ニチゴーGポリマー™
+  ----------------
+*/
+
+.g-polymer {
+  overflow: hidden;
+  .hero-b {
+    &__mv {
+      background: url("../img/g-polymer/bg-hero.webp") 50% / cover no-repeat;
+    }
+  }
+  .feature {
+    .scroll {
+      margin-bottom: 70px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+    }
+    &__img {
+      @media #{$sp} {
+        width: 800px;
+      }
+    }
+  }
+}
+

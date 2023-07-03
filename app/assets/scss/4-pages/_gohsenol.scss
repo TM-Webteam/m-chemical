@@ -1,0 +1,53 @@
+/*
+  ----------------
+  ゴーセノール™
+  ----------------
+*/
+
+.gohsenol {
+  overflow: hidden;
+
+  .hero-b {
+    &__mv {
+      background: url("../img/gohsenol/bg-hero.webp") 50% / cover no-repeat;
+    }
+  }
+  .feature {
+    .card {
+      margin-bottom: 70px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+      &__box {
+        width: calc(100% / 4 - 25px);
+        background: #fff;
+        padding: 30px;
+        @media #{$sp} {
+          width: 100%;
+          padding: 15px;
+        }
+        &--ttl {
+          font-size: 20px;
+          font-weight: bold;
+          color: #005BAC;
+          text-align: center;
+          margin-bottom: 20px;
+          @media #{$sp} {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+        }
+        &--txt {
+          font-weight: 500;
+          small {
+            display: block;
+            margin-top: 10px;
+            font-size: 10px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+
+}
