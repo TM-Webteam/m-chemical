@@ -8,10 +8,32 @@
   overflow: hidden;
 
   .hero-b {
-    &__mv {
-      background: url("../img/gohsenol/bg-hero.webp") 50% / cover no-repeat;
+    .ttl-primary {
+      @media #{$sp} {
+        text-align: center;
+      }
+      img {
+        max-width: 289px;
+        @media #{$sp} {
+          max-width: 85%;
+        }
+      }
     }
   }
+
+  .sec01 {
+    position: relative;
+    .brand-circle-small {
+      position: absolute;
+      top: 80%;
+      right: -300px;
+      @media #{$sp} {
+        top: 92%;
+        right: -140px;
+      }
+    }
+  }
+
   .feature {
     .card {
       margin-bottom: 70px;

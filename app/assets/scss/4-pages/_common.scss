@@ -64,6 +64,112 @@
       width: 100%;
       height: 150px;
     }
+    li {
+      height: 430px;
+      @media #{$sp} {
+        height: 150px;
+      }
+      &.slider01 {
+        background: url("../img/common/img-slider01.webp") 50% / cover no-repeat;
+      }
+      &.slider02 {
+        background: url("../img/common/img-slider02.webp") 50% / cover no-repeat;
+      }
+      &.slider03 {
+        background: url("../img/common/img-slider03.webp") 50% / cover no-repeat;
+      }
+      &.slider04 {
+        background: url("../img/common/img-slider04.webp") 50% / cover no-repeat;
+      }
+      &.slider05 {
+        background: url("../img/common/img-slider05.webp") 50% / cover no-repeat;
+      }
+      &.slider06 {
+        background: url("../img/common/img-slider06.webp") 50% / cover no-repeat;
+      }
+      &.slider07 {
+        background: url("../img/common/img-slider07.webp") 50% / cover no-repeat;
+      }
+      &.slider08 {
+        background: url("../img/common/img-slider08.webp") 50% / cover no-repeat;
+      }
+      &.slider09 {
+        background: url("../img/common/img-slider09.webp") 50% / cover no-repeat;
+      }
+      &.slider10 {
+        background: url("../img/common/img-slider10.webp") 50% / cover no-repeat;
+      }
+    }
+  }
+}
+
+.hero-c {
+  height: 475px;
+  @media #{$sp} {
+    height: auto;
+  }
+  .containers {
+    padding: 15px;
+    @media #{$sp} {
+      padding: 50px 15px 35px;
+    }
+  }
+  &__box {
+    width: 50%;
+    @media #{$sp} {
+      width: 100%;
+    }
+    &--list {
+      margin-bottom: 40px;
+      background: #fff;
+      padding: 15px 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.16);
+      text-align: left;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 15px 10px 0 10px;
+        border-color: #fff transparent transparent transparent;
+      }
+      li {
+        font-size: 16px;
+        font-weight: bold;
+        color: #35AA59;
+        padding-left: 20px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 10px;
+          height: 7px;
+          background: url("../img/trading/check.svg") 50% / contain no-repeat;
+        }
+        span {
+          font-size: 15px;
+          font-weight: 500;
+          color: #000;
+        }
+      }
+    }
+    &--lead {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      @media #{$sp} {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 
@@ -135,22 +241,174 @@
   }
 }
 
-.lineup {
-  background: url("../img/common/bg-lineup.webp") 0 100% / cover no-repeat;
+.brand-circle-medium {
+  border: 7px solid #EEAA41;
+  border-radius: 50%;
+  width: 880px;
+  height: 880px;
+  @media #{$sp} {
+    border: 4px solid #EEAA41;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.brand-circle-small {
+  border: 7px solid #EEAA41;
+  border-radius: 50%;
+  width: 710px;
+  height: 710px;
+  @media #{$sp} {
+    border: 4px solid #EEAA41;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.needs {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 50%;
+    border-top: 100px solid #fff;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    transform: translateX(-50%);
+    z-index: 3;
+    @media #{$sp} {
+      border-top: 40px solid #fff;
+    }
+  }
+  .containers {
+    padding: 70px 15px 40px;
+    @media #{$sp} {
+      padding: 35px 15px 20px;
+    }
+  }
+  .card {
+    &__box {
+      // display: block;
+      width: calc(100% / 2 - 30px);
+      padding: 30px;
+      background: #fff;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.16);
+      background: url("../img/common/needs-check.svg") 15px 50% no-repeat;
+      @media #{$sp} {
+        width: 100%;
+        padding: 15px;
+      }
+      &--ttl {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        width: 160px;
+        color: #fff;
+        background: #8494A0;
+        padding: 5px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @media #{$sp} {
+          font-size: 14px;
+        }
+      }
+      &--txt {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        @media #{$sp} {
+          font-size: 16px;
+        }
+        span {
+          color: #35AA59;
+        }
+      }
+    }
+  }
+}
+
+.forte {
+  background: url("../img/common/bg-forte.webp") 50% / cover no-repeat;
   position: relative;
   @media #{$sp} {
-    background: url("../img/common/bg-lineup-sp.webp") 0 100% / 100% no-repeat;
+    background: url("../img/common/bg-forte-sp.webp") 50% 100% / 100% no-repeat #F7F9FA;
+  }
+  .containers {
+    padding: 150px 15px 70px;
+    @media #{$sp} {
+      padding: 70px 15px 200px;
+    }
+  }
+  .ttl-secondary {
+    text-align: left;
+    @media #{$sp} {
+      text-align: center;
+    }
+  }
+  &__ttl {
+    padding-left: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 30px;
+    @media #{$sp} {
+      margin-bottom: 15px;
+      font-size: 16px;
+      display: inline-block;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 16px;
+      height: 3px;
+      background: #35AA59;
+      @media #{$sp} {
+        top: 12px;
+      }
+    }
+  }
+  &__txt {
+    margin-bottom: 40px;
+    @media #{$sp} {
+      margin-bottom: 15px;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .brand-circle-small {
+    position: absolute;
+    top: 85%;
+    left: -350px;
+    z-index: 2;
+    @media #{$sp} {
+      top: 90%;
+      left: -150px;
+    }
+  }
+}
+
+.lineup {
+  background: url("../img/common/bg-lineup-v2.webp") 100% 100% / cover no-repeat;
+  @media #{$sp} {
+    background: url("../img/common/bg-lineup-v2-sp.webp") 100% 100% / 100% no-repeat;
     .containers {
       padding: 35px 15px 200px;
     }
-  }
-  .brand-circle {
-    position: absolute;
-    top: 30px;
-    right: -50%;
-  }
-  .ttl-secondary,.lead {
-    text-align: left;
   }
   .card {
     &__box {
@@ -202,6 +460,43 @@
           padding-top: 15px;
         }
       }
+    }
+  }
+}
+
+.anxiety {
+  background: url("../img/common/bg-anxiety.webp") 0 50% / cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  @media #{$sp} {
+    
+  }
+  .containers {
+    padding: 100px 30px 130px;
+    @media #{$sp} {
+      padding: 35px 15px 60px;
+    }
+  }
+  &__ttl {
+    margin-left: 30%;
+    @media #{$sp} {
+      margin-left: auto;
+      text-align: center;
+      text-shadow: 0 0 10px #fff;
+    }
+    span {
+      background: #222;
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      padding: 2px 5px;
+      @media #{$sp} {
+        font-size: 18px;
+      }
+    }
+    font-size: 24px;
+    font-weight: bold;
+    @media #{$sp} {
+      font-size: 16px;
     }
   }
 }
@@ -327,6 +622,63 @@
     @media #{$sp} {
       font-size: 18px;
       margin-bottom: 20px;
+    }
+  }
+}
+
+.feel-safe {
+  .ttl-secondary {
+    margin-bottom: 80px;
+    @media #{$sp} {
+      margin-bottom: 40px;
+    }
+  }
+  .card {
+    &__box {
+      // display: block;
+      width: calc(100% / 2 - 30px);
+      padding: 100px 50px 50px;
+      background: #fff;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.16);
+      @media #{$sp} {
+        width: 100%;
+        padding: 50px 15px 15px;
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+      &:not(:last-child) {
+        @media #{$sp} {
+          margin-bottom: 40px;
+        }
+      }
+      &--img {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        @media #{$sp} {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      &--ttl {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+      &--txt {
+        font-weight: 500;
+      }
     }
   }
 }

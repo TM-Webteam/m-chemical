@@ -1,3 +1,17 @@
+$(window).on('load', function(){
+  //---------------------------------
+  // AOS
+  //---------------------------------
+  AOS.init({
+    offset: 120, //初期値
+    delay: 0, //初期値
+    anchor: 'top-bottom', //初期値
+    duration: 1000, //初期値　400
+    easing: 'ease', //初期値
+    once: true, //初期値　false
+  });
+});
+
 $(document).ready(function() {
   //---------------------------------
   // SP時横スクロール UI
@@ -25,18 +39,6 @@ $(document).ready(function() {
     return false;
   });
 
-
-  //---------------------------------
-  // AOS
-  //---------------------------------
-  AOS.init({
-    offset: 120,　//初期値
-    delay: 0,　//初期値
-    anchor: 'top-bottom', //初期値
-    duration: 1000,　//初期値　400
-    easing: 'ease',　//初期値
-    once: true,　//初期値　false
-  });
 
   //---------------------------------
   // SP アコーディオン
@@ -149,6 +151,22 @@ $(document).ready(function() {
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+  });
+});
+
+
+
+//--------------------------------------
+//　hero-slick
+//--------------------------------------
+
+$(document).ready(function() {
+  $('#hero-slick').slick({
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 1,
+    fade: true,
+    speed: 2000,
   });
 });
 

@@ -624,6 +624,7 @@
 .material {
   background: url("../img/common/bg-material.webp") 50% / cover no-repeat;
   color: #fff;
+  position: relative;
   .desc {
     &__img {
       text-align: center;
@@ -685,6 +686,16 @@
           margin: 20px auto 0;
         }
       }
+    }
+  }
+  .brand-circle-small {
+    position: absolute;
+    top: 60%;
+    left: -400px;
+    z-index: 2;
+    @media #{$sp} {
+      top: 60%;
+      left: -140px;
     }
   }
 }

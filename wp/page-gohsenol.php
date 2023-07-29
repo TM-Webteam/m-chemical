@@ -7,12 +7,20 @@
       <div class="hero-b__box core">
         <div>
           <div class="hero-b__box--sub"><span>一般ポリビニールアルコール</span></div>
-          <h1 class="ttl-primary" data-aos="fade" data-aos-delay="400">ゴーセノール™</h1>
+          <h1 class="ttl-primary" data-aos="fade" data-aos-delay="400"><img src="<?php echo assets_path() ?>img/gohsenol/logo.svg" alt="ゴーセノール™"></h1>
           <div class="hero-b__box--txt">優れた水溶性、接着性、造膜性、化学的安定性を持ち、<br>接着・紙・乳化・懸濁・繊維・フィルムなどの工業原料、<br>加工剤として使われるPVOH・PVA</div>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/gohsenol/" class="more boder"><span>カタログダウンロードはこちら</span></a>
         </div>
       </div>
-      <figure class="hero-b__mv"></figure>
+      <figure class="hero-b__mv">
+        <ul id="hero-slick">
+          <li class="slider01"></li>
+          <li class="slider02"></li>
+          <li class="slider03"></li>
+          <li class="slider04"></li>
+          <li class="slider05"></li>
+        </ul>
+      </figure>
     </div>
   </section>
 
@@ -40,6 +48,7 @@
         <figure class="sec01__img" data-aos="fade-left"><img src="<?php echo assets_path() ?>img/gohsenol/img01.jpg" alt="ポリビニルアルコール・PVOH・PVA"></figure>
       </div>
     </div>
+    <div class="brand-circle-small"></div>
   </section>
 
   <section class="feature bg-LB">
@@ -102,6 +111,7 @@
         </summary>
       </div>
     </div>
+    <div class="brand-circle-small"></div>
   </section>
 
   <section id="anchor02" class="product bg-LB">

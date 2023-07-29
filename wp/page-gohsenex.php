@@ -7,12 +7,20 @@
       <div class="hero-b__box core">
         <div>
           <div class="hero-b__box--sub"><span>変性ポリビニールアルコール</span></div>
-          <h1 class="ttl-primary" data-aos="fade" data-aos-delay="400">ゴーセネックス™</h1>
+          <h1 class="ttl-primary" data-aos="fade" data-aos-delay="400"><img src="<?php echo assets_path() ?>img/gohsenex/logo.svg" alt="ゴーセネックス™"></h1>
           <div class="hero-b__box--txt">変性基の導入により従来のPVOHにはない<br>新たな機能を付与した機能性PVOH</div>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/gohsenex/" class="more boder"><span>カタログダウンロードはこちら</span></a>
         </div>
       </div>
-      <figure class="hero-b__mv"></figure>
+      <figure class="hero-b__mv">
+        <ul id="hero-slick">
+          <li class="slider01"></li>
+          <li class="slider02"></li>
+          <li class="slider03"></li>
+          <li class="slider05"></li>
+          <li class="slider06"></li>
+        </ul>
+      </figure>
     </div>
   </section>
 
@@ -39,6 +47,7 @@
         <figure class="sec01__img" data-aos="fade-left"><img src="<?php echo assets_path() ?>img/gohsenex/img01.jpg" alt="機能性PVOH"></figure>
       </div>
     </div>
+    <div class="brand-circle-small"></div>
   </section>
 
   <section class="feature bg-LB">
@@ -93,6 +102,7 @@
         </summary>
       </div>
     </div>
+    <div class="brand-circle-small"></div>
   </section>
 
   <section id="anchor02" class="product bg-LB">

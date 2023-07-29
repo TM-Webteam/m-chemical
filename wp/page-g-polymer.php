@@ -7,12 +7,22 @@
       <div class="hero-b__box core">
         <div>
           <div class="hero-b__box--sub"><span>ブテンジオール・<br>ビニルアルコールコポリマー（BVOH）</span></div>
-          <h1 class="ttl-primary" data-aos="fade" data-aos-delay="400">ニチゴーGポリマー™</h1>
+          <h1 class="ttl-primary" data-aos="fade" data-aos-delay="400"><img src="<?php echo assets_path() ?>img/g-polymer/logo.svg" alt="ニチゴーGポリマー™"></h1>
           <div class="hero-b__box--txt">非晶部の凝集力と結晶性を自在に制御できる、<br>次世代ビニルアルコール系樹脂（BVOH)</div>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/g-polymer/" class="more boder"><span>カタログダウンロードはこちら</span></a>
         </div>
       </div>
-      <figure class="hero-b__mv"></figure>
+      <figure class="hero-b__mv">
+        <ul id="hero-slick">
+          <li class="slider01"></li>
+          <li class="slider03"></li>
+          <li class="slider06"></li>
+          <li class="slider07"></li>
+          <li class="slider08"></li>
+          <li class="slider09"></li>
+          <li class="slider10"></li>
+        </ul>
+      </figure>
     </div>
   </section>
 
@@ -40,6 +50,7 @@
         <figure class="sec01__img" data-aos="fade-left"><img src="<?php echo assets_path() ?>img/g-polymer/img01.jpg" alt="ブテンジオールビニルアルコールポリマー（BVOH）"></figure>
       </div>
     </div>
+    <div class="brand-circle-small"></div>
   </section>
 
   <section class="feature bg-LB">
@@ -71,6 +82,7 @@
         </summary>
       </div>
     </div>
+    <div class="brand-circle-small"></div>
   </section>
 
   <section id="anchor02" class="product bg-LB">

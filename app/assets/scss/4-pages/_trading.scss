@@ -1,0 +1,22 @@
+/*
+  ----------------
+  trading
+  ----------------
+*/
+
+.trading {
+  overflow: hidden;
+  
+  .hero-c {
+    background: url("../img/trading/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      background: url("../img/trading/bg-hero-sp.webp") 50% 0 / 100% no-repeat #E6EBF1;
+    }
+    .containers {
+      @media #{$sp} {
+        padding: 220px 15px 35px;
+      }
+    }
+  }
+
+}

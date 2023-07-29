@@ -1,0 +1,41 @@
+/*
+  ----------------
+  manufacturer
+  ----------------
+*/
+
+.manufacturer {
+  overflow: hidden;
+  
+  .hero-c {
+    background: url("../img/manufacturer/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      background: url("../img/manufacturer/bg-hero-sp.webp") 50% 0 / 100% no-repeat #E6EBF1;
+    }
+    .containers {
+      @media #{$sp} {
+        padding: 220px 15px 35px;
+      }
+    }
+  }
+
+  .needs {
+    .ttl-secondary {
+      margin-bottom: 60px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+    }
+    .card__box {
+      @media #{$sp} {
+        padding: 20px 15px 15px;
+      }
+      &:not(:last-child) {
+        @media #{$sp} {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+}

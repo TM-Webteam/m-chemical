@@ -267,53 +267,28 @@
     background: url("../img/top/bg-forte.webp") 80% 50% / cover no-repeat;
     @media #{$sp} {
       background: url("../img/top/bg-forte-sp.webp") 50% 100% / 100% no-repeat #F7F9FA;
-      .containers {
+    }
+    .containers {
+      padding: 70px 15px;
+      @media #{$sp} {
         padding: 35px 15px 280px;
       }
     }
-    .ttl-secondary {
+  }
+
+  .lineup {
+    background: url("../img/common/bg-lineup.webp") 0 100% / cover no-repeat;
+    position: relative;
+    @media #{$sp} {
+      background: url("../img/common/bg-lineup-sp.webp") 0 100% / 100% no-repeat;
+    }
+    .brand-circle {
+      position: absolute;
+      top: 30px;
+      right: -50%;
+    }
+    .ttl-secondary,.lead {
       text-align: left;
-      @media #{$sp} {
-        text-align: center;
-      }
-    }
-    &__ttl {
-      padding-left: 30px;
-      font-size: 22px;
-      font-weight: bold;
-      position: relative;
-      margin-bottom: 30px;
-      @media #{$sp} {
-        margin-bottom: 15px;
-        font-size: 16px;
-        display: inline-block;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        top: 20px;
-        left: 0;
-        width: 16px;
-        height: 3px;
-        background: #35AA59;
-        @media #{$sp} {
-          top: 12px;
-        }
-      }
-    }
-    &__txt {
-      margin-bottom: 40px;
-      @media #{$sp} {
-        margin-bottom: 15px;
-      }
-      p {
-        &:not(:last-child) {
-          margin-bottom: 30px;
-          @media #{$sp} {
-            margin-bottom: 15px;
-          }
-        }
-      }
     }
   }
 
