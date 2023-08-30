@@ -5,14 +5,20 @@
 */
 
 .form {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   &__note {
     margin-bottom: 60px;
     @media #{$sp} {
       margin-bottom: 30px;
     }
-    p {
+    li {
+      list-style: disc;
+      font-weight: 500;
+      &::marker {
+        color: #35AA59;
+      }
       &:not(:last-child) {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
     }
   }
@@ -23,13 +29,13 @@
     }
   }
   &__ttl {
-    background: #14134C;
+    background: #F6F6F6;
     text-align: center;
-    color: #fff;
+    color: #35AA59;
     font-size: 20px;
     font-weight: bold;
     padding: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-bottom: 2px solid #fff;
     @media #{$sp} {
       font-size: 16px;
       padding: 10px;
@@ -45,7 +51,6 @@
   &__table {
     background: #F6F6F6;
     padding: 20px 70px 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     @media #{$sp} {
       padding: 15px;
     }
@@ -64,7 +69,7 @@
       }
     }
     tr {
-      border-bottom: 1px solid rgba(20,19,76,0.2);
+      border-bottom: 1px solid #ccc;
       th,td {
         padding: 15px 0;
         text-align: left;
@@ -85,11 +90,12 @@
         .required,.optional {
           display: inline-block;
           font-weight: bold;
-          font-size: 11px;
-          padding: 0 5px;
+          font-size: 12px;
+          padding: 5px 8px;
           background: #FF0000;
           color: #fff;
-          border-radius: 3px;
+          line-height: 1;
+          border-radius: 15px;
         }
         .optional {
           background: #8D8D8D;
@@ -106,7 +112,7 @@
           width: 100%;
           padding: 5px 10px;
           border: 1px solid #BBBBBB;
-          border-radius: 3px;
+          border-radius: 5px;
           background: #fff;
           height: 40px;
           margin: 0 10px;
@@ -156,7 +162,7 @@
             display: inline;
           }
           input[type="text"] {
-            width: 85%;
+            width: 80%;
             @media #{$sp} {
               width: 70%;
             }
@@ -176,33 +182,39 @@
       @media #{$sp} {
         margin-top: 20px;
       }
-      &.more.bg-o {
+      &.more {
         transition: all .3s;
-        width: 300px;
+        // width: 300px;
+        padding: 15px;
+        border: 1px solid #35AA59;
+        &:hover {
+          color: #35AA59;
+        }
         @media #{$sp} {
           width: 85%;
         }
+
       }
     }
-    input[type="button"] {
-      display: block;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 700;
-      text-align: center;
-      padding: 20px 50px;
-      background: #F29600;
-      line-height: 1;
-      margin: 0 auto;
-      border-radius: 37px;
-      border: 2px solid #F29600;
-      transition: all .3s;
-      width: 300px;
-      @media #{$sp} {
-        width: 85%;
-        font-size: 14px;
-      }
-    }
+    // input[type="button"] {
+    //   display: block;
+    //   color: #fff;
+    //   font-size: 20px;
+    //   font-weight: 700;
+    //   text-align: center;
+    //   padding: 20px 50px;
+    //   background: #F29600;
+    //   line-height: 1;
+    //   margin: 0 auto;
+    //   border-radius: 37px;
+    //   border: 2px solid #F29600;
+    //   transition: all .3s;
+    //   width: 300px;
+    //   @media #{$sp} {
+    //     width: 85%;
+    //     font-size: 14px;
+    //   }
+    // }
     .required {
       color: red;
       font-size: 12px;
@@ -233,7 +245,10 @@
 .side-form {
   .form {
     &__table {
-      padding: 15px;
+      padding: 15px 30px 40px;
+      @media #{$sp} {
+        padding: 15px;
+      }
       col {
         &:first-child {
           width: 100%;
@@ -261,7 +276,7 @@
           }
         }
       }
-      .btn01.small {
+      .more.small {
         width: 100%;
       }
     }

@@ -1,0 +1,26 @@
+/*
+  ----------------
+  contact
+  ----------------
+*/
+
+.contact {
+
+  .hero-d {
+    background: url("../img/contact/bg-hero.webp") 100% 50% / cover no-repeat;
+    &__box--lead {
+      color: #fff;
+    }
+  }
+
+  .form {
+    box-shadow: none;
+    &__note {
+      padding-left: 1.5em;
+    }
+    &__wrap {
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  }
+  
+}

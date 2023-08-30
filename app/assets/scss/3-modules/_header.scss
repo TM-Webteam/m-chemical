@@ -364,6 +364,9 @@ header {
               width: 100%;
             }
           }
+          &.inline {
+            display: inline;
+          }
         }
       }
     }
@@ -543,6 +546,9 @@ header.open {
   height: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  @media #{$pc} {
+    height: auto;
+  }
   #nav-toggle {
     position: relative;
     span:first-child {

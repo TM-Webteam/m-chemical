@@ -1,0 +1,232 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="arc-brand-gohsenex">
+
+  <section class="hero-d core">
+    <div class="containers">
+      <div class="hero-d__box">
+        <div class="hero-d__box--had"><span>銘柄一覧</span></div>
+        <h1 class="ttl-primary">ゴーセネックス™</h1>
+        <div class="hero-d__box--lead">ゴーセネックス™の銘柄をご紹介します。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grade">
+    <div class="containers">
+      <h2 class="ttl-secondary">ゴーセネックス™の銘柄</h2>
+      <ul class="flex gap30 grade__btn">
+        <li><a href="">反応型PVOH Zシリーズ</a></li>
+        <li><a href="">カチオン性PVOH Kシリーズ</a></li>
+        <li><a href="">アニオン性PVOH Lシリーズ</a></li>
+        <li><a href="">アニオン性PVOH Tシリーズ</a></li>
+        <li><a href="">低ケン化PVOH LWシリーズ</a></li>
+        <li><a href="">親水基変性PVOH WOシリーズ</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="containers">
+      <h2 class="ttl-secondary">ゴーセネックス™のグレード一覧表</h2>
+      <div class="grade-menu">
+        <div class="scroll">
+          <table>
+            <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>分類</th>
+                <th>品種</th>
+                <th>ケン化品（mol %）</th>
+                <th>粘度（mPa・s）</th>
+              </tr>
+              <tr>
+                <td rowspan="9">反応型PVOH<br><a href="#">水溶液粘度</a></td>
+                <td><a href="#">ゴーセネックス™Z</a></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Z-100</td>
+                <td>98.5以上</td>
+                <td>4.5~6.0</td>
+              </tr>
+              <tr>
+                <td>Z-200</td>
+                <td>99.0以上</td>
+                <td>11.5~14.0</td>
+              </tr>
+              <tr>
+                <td>Z-205</td>
+                <td>99.0以上</td>
+                <td>11.5~14.0</td>
+              </tr>
+              <tr>
+                <td>Z-210</td>
+                <td>95.0~97.0</td>
+                <td>11.5~15.0</td>
+              </tr>
+              <tr>
+                <td>Z-220</td>
+                <td>90.5~92.5</td>
+                <td>11.5~15.0</td>
+              </tr>
+              <tr>
+                <td>Z-300</td>
+                <td>98.0~99.0</td>
+                <td>24.0~30.0</td>
+              </tr>
+              <tr>
+                <td>Z-320</td>
+                <td>92.0~94.0</td>
+                <td>19.0~24.0</td>
+              </tr>
+              <tr>
+                <td>Z-410</td>
+                <td>97.5~98.5</td>
+                <td>43.5~58.5</td>
+              </tr>
+              <tr>
+                <td rowspan="2">カチオン性PVOH<br><a href="#">水溶液粘度</a></td>
+                <td><a href="#">ゴーセネックス™K</a></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>K-434</td>
+                <td>85.5~88.0</td>
+                <td>18.0~22.0</td>
+              </tr>
+              <tr>
+                <td rowspan="3">アニオン性PVOH</td>
+                <td><a href="#">ゴーセネックス™L</a></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>L-3266</td>
+                <td>86.5~89.0</td>
+                <td>2.3~2.7</td>
+              </tr>
+              <tr>
+                <td>CKS-50</td>
+                <td>99.0以上</td>
+                <td>2.5~3.0</td>
+              </tr>
+              <tr>
+                <td rowspan="4">アニオン性PVOH<br><a href="#">水溶液粘度</a></td>
+                <td><a href="#">ゴーセネックス™T</a></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>T-330H</td>
+                <td>99.0以上</td>
+                <td>27.0~32.0</td>
+              </tr>
+              <tr>
+                <td>T-330</td>
+                <td>95.0~98.0</td>
+                <td>27.0~33.0</td>
+              </tr>
+              <tr>
+                <td>T-350</td>
+                <td>93.0~95.0</td>
+                <td>27.0~33.0</td>
+              </tr>
+              <tr>
+                <td rowspan="3">紙ケン化PVOH<br><small>（水溶液タイプ）</small></td>
+                <td><a href="#">ゴーセネックス™LW</a></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>LW-100</td>
+                <td>39.0~46.0</td>
+                <td>500~2,500*</td>
+              </tr>
+              <tr>
+                <td>LW-200</td>
+                <td>46.0~53.0</td>
+                <td>500~2,000*</td>
+              </tr>
+              <tr>
+                <td rowspan="2">親水基変性PVOH</td>
+                <td><a href="#">ゴーセネックス™WO</a></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>WO-320N</td>
+                <td>98.5以上</td>
+                <td>6.5~8.5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="note">
+          <li>※粘度は、4%水溶液を20℃にて測定、ヘプラー粘度計を使用。</li>
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="product bg-LB">
+    <div class="containers">
+      <h2 class="ttl-secondary">ゴーセネックス™の使用用途</h2>
+      <div class="lead">ゴーセネックス™は、その高い機能性から様々な製品開発シーンで活用されています。</div>
+      <div class="flex item">
+        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="200">
+          <img src="/assets/img/common/img-product01.jpg" alt="接着・バインダー">
+          <span>接着・バインダー</span>
+        </a>
+        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="300">
+          <img src="/assets/img/common/img-product02.jpg" alt="紙加工">
+          <span>紙加工</span>
+        </a>
+        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="400">
+          <img src="/assets/img/common/img-product03.jpg" alt="エマルジョン">
+          <span>エマルジョン</span>
+        </a>
+        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="500">
+          <img src="/assets/img/common/img-product05.jpg" alt="フィルム">
+          <span>フィルム</span>
+        </a>
+        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="600">
+          <img src="/assets/img/common/img-product03.jpg" alt="石油掘削">
+          <span>石油掘削</span>
+        </a>
+        
+      </div>
+      <div class="taC"><a href="/usage/" class="txt-link"><span>用途一覧を見る</span><img src="/assets/img/common/bg-more.svg" alt="用途一覧を見る"></a></div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

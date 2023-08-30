@@ -16,6 +16,15 @@
     </div>
   </section>
 
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップ</a></li>
+        <li>総合商社・化学専門商社の皆様へ</li>
+      </ul>
+    </div>
+  </section>
+
   <section class="needs">
     <div class="containers">
       <h2 class="ttl-secondary">以下のようなニーズをお持ちでは<br class="sp-only">ありませんか？</h2>

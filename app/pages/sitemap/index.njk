@@ -1,0 +1,70 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="sitemap">
+
+  <section>
+    <div class="containers flex gap40">
+
+      <div class="group">
+        <div class="group__ttl">製品情報</div>
+        <ul class="group__list">
+          <li><a href="/gohsenol/">ゴーセノール</a></li>
+          <li><a href="/gohsenex/">ゴーセネックス</a></li>
+          <li><a href="/g-polymer/">ニチゴーGポリマー</a></li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <div class="group__ttl">サービスとサポート</div>
+        <ul class="group__list">
+          <li><a href="/research_and_development/">研究開発者・技術部門の方</a></li>
+          <li><a href="/trading/">総合商社・科学専門商社の方</a></li>
+          <li><a href="/manufacturer/">メーカー企画・購買部門の方</a></li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <div class="group__ttl">お問合せ</div>
+        <ul class="group__list">
+          <li><a href="/research_and_development/">製品カタログ・SDSダウンロード</a></li>
+          <li><a href="/trading/">ご相談・お見積り依頼</a></li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <div class="group__ttl">技術・お役立ち情報</div>
+        <ul class="group__list">
+          <li><a href="/technical/category/gohsenol/">技術情報：ゴーセノール</a></li>
+          <li><a href="/technical/category/gohsenex/">技術情報：ゴーセネックス</a></li>
+          <li><a href="/technical/category/g-polymer/">技術情報：ニチゴーGポリマー</a></li>
+          <li><a href="/knowledge/">基礎知識・用語解説</a></li>
+          <li><a href="/usage/">使用用途</a></li>
+          <li><a href="/news/">ニュース</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,173 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="arc-brand-gohsenol">
+
+  <section class="hero-d core">
+    <div class="containers">
+      <div class="hero-d__box">
+        <div class="hero-d__box--had"><span>銘柄一覧</span></div>
+        <h1 class="ttl-primary">ゴーセノール™</h1>
+        <div class="hero-d__box--lead">ゴーセノール™の銘柄をご紹介します。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grade">
+    <div class="containers">
+      <h2 class="ttl-secondary">ゴーセノール™の銘柄</h2>
+      <ul class="flex grade__btn">
+        <li><a href="">N型ゴーセノール™</a></li>
+        <li><a href="">G型ゴーセノール™</a></li>
+        <li><a href="">K型ゴーセノール™</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="containers">
+      <h2 class="ttl-secondary">ゴーセノール™のグレード一覧表</h2>
+      <div class="grade-menu">
+        <div class="scroll">
+          <table>
+            <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>分類</th>
+                <th>品種</th>
+                <th>ケン化品（mol %）</th>
+                <th>粘度（mPa・s）</th>
+              </tr>
+              <tr>
+                <td rowspan="2">N型・A型PVOH<br><small>（完全、準完全ケン化型）</small></td>
+                <td>N-300</td>
+                <td>98.0~99.0</td>
+                <td>25.0~30.0</td>
+              </tr>
+              <tr>
+                <td>NL-05</td>
+                <td>98.5以上</td>
+                <td>4.6~6.0</td>
+              </tr>
+              <tr>
+                <td rowspan="5">G型PVOH<br><small>（部分ケン化型）</small></td>
+                <td>GH-20R</td>
+                <td>86.5~89.0</td>
+                <td>40.0~46.0</td>
+              </tr>
+              <tr>
+                <td>GH-17R</td>
+                <td>86.5~89.0</td>
+                <td>27.0~33.0</td>
+              </tr>
+              <tr>
+                <td>GH-14R</td>
+                <td>86.5~89.0</td>
+                <td>20.0~24.5</td>
+              </tr>
+              <tr>
+                <td>GL-05</td>
+                <td>86.5~89.0</td>
+                <td>4.8~5.8</td>
+              </tr>
+              <tr>
+                <td>GL-03</td>
+                <td>86.5~89.0</td>
+                <td>3.0~3.7</td>
+              </tr>
+              <tr>
+                <td rowspan="5">K型PVOH<br><small>（部分ケン化型）</small></td>
+                <td>KH-20</td>
+                <td>78.5~81.5</td>
+                <td>44.0~52.0</td>
+              </tr>
+              <tr>
+                <td>KH-17</td>
+                <td>78.5~81.5</td>
+                <td>32.0~38.0</td>
+              </tr>
+              <tr>
+                <td>KH-05</td>
+                <td>78.5~82.0</td>
+                <td>4.0~5.0</td>
+              </tr>
+              <tr>
+                <td>KH-03</td>
+                <td>78.5~82.0</td>
+                <td>2.8~3.4</td>
+              </tr>
+              <tr>
+                <td>NK-05R</td>
+                <td>71.0~75.0</td>
+                <td>4.5~5.5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="note">
+          <li>※揮発分は製品包装時保証で、5%以下です。</li>
+          <li>※pHは4%水溶液､30℃において5~7です。</li>
+          <li>※ゴーセノール™の試験方法はJIS K 6726（ポリビニルアルコール試験方法）に準拠しています。</li>
+          <li>※粘度：4%水溶液、20℃</li>
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="product bg-LB">
+    <div class="containers">
+      <h2 class="ttl-secondary">ゴーセノール™の使用用途</h2>
+      <div class="lead">ゴーセノール™は、その高い機能性から様々な製品開発シーンで活用されています。</div>
+      <div class="flex item">
+        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="200">
+          <img src="/assets/img/common/img-product01.jpg" alt="接着・バインダー">
+          <span>接着・バインダー</span>
+        </a>
+        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="300">
+          <img src="/assets/img/common/img-product02.jpg" alt="紙加工">
+          <span>紙加工</span>
+        </a>
+        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="400">
+          <img src="/assets/img/common/img-product03.jpg" alt="エマルジョン">
+          <span>エマルジョン</span>
+        </a>
+        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="500">
+          <img src="/assets/img/common/img-product04.jpg" alt="懸濁剤">
+          <span>懸濁剤</span>
+        </a>
+        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="600">
+          <img src="/assets/img/common/img-product05.jpg" alt="フィルム">
+          <span>フィルム</span>
+        </a>
+      </div>
+      <div class="taC"><a href="/usage/" class="txt-link"><span>用途一覧を見る</span><img src="/assets/img/common/bg-more.svg" alt="用途一覧を見る"></a></div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

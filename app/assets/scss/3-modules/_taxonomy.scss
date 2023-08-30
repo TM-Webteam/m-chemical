@@ -6,8 +6,9 @@
 
 .article {
   &__ttl {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
+    line-height: 1.5;
     margin-bottom: 30px;
     @media #{$sp} {
       font-size: 20px;
@@ -92,16 +93,15 @@
     }
   }
   &__toc {
-    border: 3px solid #F2F6FB;
+    border: 1px solid #35AA59;
+    border-radius: 10px;
     padding: 30px;
     @media #{$sp} {
-      border: 2px solid #F2F6FB;
       padding: 15px;
     }
     &--ttl {
       font-size: 20px;
       font-weight: bold;
-      color: #0D5BAB;
       margin-bottom: 20px;
       @media #{$sp} {
         font-size: 16px;
@@ -111,6 +111,7 @@
     &--list {
       padding-left: 1.5em;
       dl {
+        counter-increment: number 1;
         &:not(:last-child) {
           margin-bottom: 30px;
           @media #{$sp} {
@@ -122,11 +123,13 @@
           margin-bottom: 10px;
           position: relative;
           &::before {
-            content: "●";
+            content: counter(number) " "; 
             position: absolute;
             top: 0;
             left: -1.5em;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #35AA59;
             @media #{$sp} {
               font-size: 14px;
             }
@@ -137,7 +140,10 @@
           ul {
             padding-left: 1.5em;
             li {
-              list-style: disc;
+              list-style: circle;
+              &::marker {
+                color: #35AA59;
+              }
             }
           }
         }

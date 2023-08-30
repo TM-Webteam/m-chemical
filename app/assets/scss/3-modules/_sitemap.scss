@@ -7,7 +7,7 @@
 .sitemap {
 
   .group {
-    width: calc(100% / 3 - 40px);
+    width: calc(100% / 2 - 40px);
     @media #{$sp} {
       width: 100%;
     }

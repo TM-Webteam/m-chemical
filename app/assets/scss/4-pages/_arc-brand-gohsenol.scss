@@ -1,0 +1,24 @@
+/*
+  ----------------
+  arc-brand-gohsenol
+  ----------------
+*/
+
+.arc-brand-gohsenol {
+
+  .hero-d {
+    background: url("../img/brand/bg-gohsenol.webp") 50% / cover no-repeat;
+    &__box--had span {
+      color: #005BAC;
+      border-bottom: 1px solid #005BAC;
+    }
+  }
+
+  .product .item {
+    margin-bottom: 60px;
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
+  }
+
+}

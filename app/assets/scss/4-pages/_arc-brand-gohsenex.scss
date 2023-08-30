@@ -1,0 +1,28 @@
+/*
+  ----------------
+  arc-brand-gohsenex
+  ----------------
+*/
+
+.arc-brand-gohsenex {
+
+  .hero-d {
+    background: url("../img/brand/bg-gohsenex.webp") 50% / cover no-repeat;
+    &__box--had span {
+      color: #268CBF;
+      border-bottom: 1px solid #268CBF;
+    }
+  }
+
+  .product .item {
+    margin-bottom: 60px;
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
+  }
+
+  .grade-menu table th {
+    background: #268CBF;
+  }
+  
+}

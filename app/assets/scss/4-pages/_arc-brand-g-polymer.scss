@@ -1,0 +1,28 @@
+/*
+  ----------------
+  arc-brand-g-polymer
+  ----------------
+*/
+
+.arc-brand-g-polymer {
+
+  .hero-d {
+    background: url("../img/brand/bg-g-polymer.webp") 50% / cover no-repeat;
+    &__box--had span {
+      color: #009E89;
+      border-bottom: 1px solid #009E89;
+    }
+  }
+
+  .product .item {
+    margin-bottom: 60px;
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
+  }
+
+  .grade-menu table th {
+    background: #009E89;
+  }
+
+}

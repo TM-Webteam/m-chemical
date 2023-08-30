@@ -1,0 +1,90 @@
+/*
+  ----------------
+  company
+  ----------------
+*/
+
+.company {
+
+  .hero-d {
+    background: url("../img/company/bg-hero.webp") 50% / cover no-repeat;
+    height: 250px;
+    @media #{$sp} {
+      height: auto;
+    }
+    &__box {
+      .ttl-primary {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .summary {
+    .containers {
+      max-width: 880px;
+    }
+    &__box {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &--had {
+        font-size: 26px;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #35AA59;
+        @media #{$sp} {
+          font-size: 18px;
+        }
+      }
+    }
+    &__wrap {
+      padding: 30px;
+      @media #{$sp} {
+        padding: 15px;
+      }
+      &--ttl {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        position: relative;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+        &::before {
+          content: "・";
+          color: #35AA59;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -1.5em;
+          margin: auto;
+        }
+      }
+      dl {
+        margin-bottom: 30px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+        dt {
+          font-weight: bold;
+          color: #35AA59;
+        }
+        dd {
+          font-weight: 500;
+          a {
+            color: #1A73E8;
+            text-decoration: underline;
+            &:hover {
+              opacity: 1;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+  
+}

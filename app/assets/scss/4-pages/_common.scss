@@ -143,6 +143,43 @@
   }
 }
 
+.hero-d {
+  height: 320px;
+  @media #{$sp} {
+    height: auto;
+  }
+  &__box {
+    &--sub {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &--had {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 25px;
+      @media #{$sp} {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      span {
+        display: inline-block;
+      }
+    }
+    .ttl-primary {
+      
+    }
+    &--lead {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 0;
+      @media #{$sp} {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 .anchor {
   .containers {
     padding: 50px 15px 20px;
@@ -539,12 +576,15 @@
       }
       img {
         width: 60px;
+        height: 60px;
         border-radius: 18px;
         transition: all .5s;
         position: relative;
         z-index: 3;
+        object-fit: cover;
         @media #{$sp} {
           width: 30px;
+          height: 30px;
         }
       }
       span {
@@ -650,5 +690,165 @@
         font-weight: 500;
       }
     }
+  }
+}
+
+.grade {
+  background: #D4DFE3;
+  .lead {
+    margin-bottom: 50px;
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
+  }
+  &__btn {
+    li {
+      width: calc(100% / 3 - 20px);
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto;
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+      a {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        position: relative;
+        @media #{$sp} {
+          padding: 10px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 15px;
+          margin: auto;
+          width: 21px;
+          height: 21px;
+          background: url("../img/common/arrow02.svg") 50% / contain no-repeat;
+        }
+        &:hover {
+          opacity: 1;
+          box-shadow: 0 0 10px rgba(0,0,0,0.3);
+          color: #35AA59;
+        }
+      }
+    }
+  }
+  .card {
+    &__box {
+      width: calc(85% / 2 - 30px);
+      background: #fff;
+      padding: 50px 40px 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.16);
+      position: relative;
+      @media #{$sp} {
+        width: 85%;
+        padding: 40px 15px 15px;
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+      &--ttl {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 300px;
+        background: #35AA59;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        @media #{$sp} {
+          font-size: 14px;
+        }
+      }
+      &--img {
+        margin-bottom: 20px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.grade-menu {
+  table {
+    @media #{$sp} {
+      width: 600px;
+    }
+    col {
+      width: 25%;
+    }
+    th,td {
+      padding: 15px 30px;
+      border: 2px solid #fff;
+      @media #{$sp} {
+        padding: 10px 20px;
+        border: 1px solid #fff;
+      }
+    }
+    th {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      background: #005BAC;
+      color: #fff;
+      @media #{$sp} {
+        font-size: 12px;
+      }
+    }
+    td {
+      font-weight: 500;
+      background: #F6F6F6;
+      small {
+        font-size: 14px;
+        @media #{$sp} {
+          font-size: 12px;
+        }
+      }
+      a {
+        color: #1A73E8;
+        text-decoration: underline;
+        &:hover {
+          opacity: 1;
+          text-decoration: none;
+        }
+      }
+      &[rowspan] {
+        background: #8EA3AC;
+        color: #fff;
+        font-size: 16px;
+        vertical-align: middle;
+        @media #{$sp} {
+          font-size: 14px;
+        }
+        small {
+          font-size: 14px;
+          @media #{$sp} {
+            font-size: 12px;
+          }
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .note {
+    margin-top: 5px;
+    font-weight: 500;
   }
 }

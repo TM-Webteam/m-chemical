@@ -1,0 +1,143 @@
+/*
+  ----------------
+  tax-technical-g-polymer
+  ----------------
+*/
+
+.tax-technical-g-polymer {
+
+  .hero-d {
+    background: url("../img/technical/bg-g-polymer.webp") 50% / cover no-repeat;
+    &__box--had span {
+      color: #009E89;
+      border-bottom: 1px solid #009E89;
+    }
+  }
+  
+  .search {
+    margin: 0 auto 40px;
+    @media #{$sp} {
+      margin: 0 auto 20px;
+    }
+  }
+
+  .anc {
+    &__box {
+      &.gap30 {
+        @media #{$sp} {
+          gap: 30px 15px;
+        }
+      }
+      li {
+        width: calc(30% - 30px);
+        font-size: 18px;
+        font-weight: bold;
+        @media #{$sp} {
+          width: 85%;
+          font-size: 14px;
+        }
+        a {
+          display: block;
+          color: #000;
+          background: #fff;
+          text-align: center;
+          padding: 25px;
+          box-shadow: 0 0 20px rgba(0,0,0,0.11);
+          border: 0;
+          position: relative;
+          @media #{$sp} {
+            padding: 10px 10px 20px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            margin: auto;
+            width: 6px;
+            height: 6px;
+            border: 3px solid;
+            border-color:  transparent transparent #35AA59 #35AA59;
+            transform: rotate(-45deg);
+            transition: all .3s;
+          }
+          &:hover {
+            opacity: 1;
+            color: #35AA59;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+          }
+        }
+      }
+    }
+  }
+
+  .area {
+    &__ttl {
+      font-size: 24px;
+      font-weight: bold;
+      padding-left: 1.5em;
+      margin-bottom: 35px;
+      position: relative;
+      @media #{$sp} {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 16px;
+        height: 3px;
+        background: #35AA59;
+        @media #{$sp} {
+          width: 12px;
+          height: 2px;
+        }
+      }
+    }
+    .card {
+      gap: 25px 18px;
+      @media #{$sp} {
+        gap: 15px;
+      }
+      &__box {
+        display: block;
+        width: calc(100% / 5 - 15px);
+        @media #{$sp} {
+          width: 100%;
+        }
+        &:hover {
+          opacity: 1;
+          .card__box--img img {
+            transform:scale(1.1,1.1);
+          }
+          .card__box--ttl {
+            text-decoration: underline;
+          }
+        }
+        &--img {
+          overflow: hidden;
+          margin-bottom: 15px;
+          img {
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            transition: all .3s;
+          }
+        }
+        &--ttl {
+          text-align: center;
+          font-weight: 500;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+}

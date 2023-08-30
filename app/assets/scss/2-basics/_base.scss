@@ -306,15 +306,15 @@ main {
   text-align: center;
 }
 
-.bgB {
+.bg-gohsenol, .bgB {
   background: #005BAC;
 }
 
-.bgLB {
+.bg-gohsenex, .bgLB {
   background: #268CBF;
 }
 
-.bgG {
+.bg-g-polymer, .bgG {
   background: #009E89;
 }
 
@@ -332,4 +332,9 @@ main {
 
 .cG {
   color: #009E89;
+}
+
+.area {
+  background: #eaeff1;
+  border-top: 5px solid #c5d2d7;
 }

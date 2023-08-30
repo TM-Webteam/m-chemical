@@ -1,0 +1,38 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="thanks">
+
+  <section>
+    <div class="containers">
+
+      <h1 class="ttl-primary-lower">資料・SDSをダウンロードいただき<br class="sp-only">ありがとうございました。</h1>
+
+      <div class="lead">ご入力いただきましたメールアドレス宛に<br>資料のダウンロード用URLを<br class="sp-only">送信させていただきました。</div>
+
+      <div class="taC"><a href="/" class="txt-link"><span>トップページに戻る</span><img src="/assets/img/common/bg-more.svg" alt="トップページに戻る"></a></div>
+
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

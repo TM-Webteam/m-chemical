@@ -133,8 +133,9 @@
       margin-bottom: 10px;
     }
     &--ttl {
-      font-weight: 700;
-      margin-bottom: 5px;
+      text-align: center;
+      font-weight: 500;
+      // margin-bottom: 5px;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
@@ -152,8 +153,24 @@
 // ニュース一覧
 .arc-news {
 
-  .containers {
-    max-width: 880px;
+  .search,.catSearch,.blogList {
+    display: none;
+  }
+  .ttl-secondary {
+    text-align: left;
+  }
+  .cat {
+    border: 1px solid #8494A0;
+    background: #8494A0;
+    border-radius: 30px;
+  }
+  .time {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    @media #{$sp} {
+      font-size: 14px;
+    }
   }
   .item {
     

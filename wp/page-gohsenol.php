@@ -9,7 +9,7 @@
           <div class="hero-b__box--sub"><span>一般ポリビニールアルコール</span></div>
           <h1 class="ttl-primary" data-aos="fade" data-aos-delay="400"><img src="<?php echo assets_path() ?>img/gohsenol/logo.svg" alt="ゴーセノール™"></h1>
           <div class="hero-b__box--txt">優れた水溶性、接着性、造膜性、化学的安定性を持ち、<br>接着・紙・乳化・懸濁・繊維・フィルムなどの工業原料、<br>加工剤として使われるPVOH・PVA</div>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/gohsenol/" class="more boder"><span>カタログダウンロードはこちら</span></a>
+          <a href="<?php echo esc_url(home_url('/')); ?>catalog/gohsenol/" class="more boder"><span>カタログダウンロードはこちら</span></a>
         </div>
       </div>
       <figure class="hero-b__mv">
@@ -22,14 +22,23 @@
     </div>
   </section>
 
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="<?php echo esc_url(home_url('/')); ?>">トップ</a></li>
+        <li>ゴーセノール™</li>
+      </ul>
+    </div>
+  </section>
+
   <section class="anchor">
     <div class="containers">
       <ul class="flex item" data-aos="fade-down">
         <li><a href="#anchor01" class="inner">製品概要・特徴</a></li>
-        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>technical/gohsenol/">技術情報</a></li>
-        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>gohsenol/grades/">銘柄一覧</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>technical/category/gohsenol/">技術情報</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>gohsenol/grades/">銘柄一覧</a></li>
         <li><a href="#anchor02" class="inner">使用用途</a></li>
-        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/gohsenol/">安全データシート（SDS）</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>catalog/gohsenol/">製品カタログ・SDS</a></li>
       </ul>
     </div>
   </section>
@@ -39,7 +48,9 @@
       <h2 class="ttl-secondary">ゴーセノール™とは</h2>
       <div class="flex sp-reverse">
         <dl class="sec01__box">
-          <dt><h3>ゴーセノール™<small>（ポリビニルアルコール・PVOH・PVA）</small>は、三菱ケミカル株式会社の商標です。</h3></dt>
+          <dt>
+            <h3>ゴーセノール™<small>（ポリビニルアルコール・PVOH・PVA）</small>は、三菱ケミカル株式会社の商標です。</h3>
+          </dt>
           <dd>ゴーセノール™（ポリビニルアルコール・PVOH・PVA）は、その優れた水溶性、接着性、造膜性、化学的安定性を利用し、接着、紙、乳化、懸濁、繊維、フィルムなどの工業原料、加工剤として、国内をもとより世界各国のユーザーによりご愛顧頂いております。</dd>
           <dd>昭和2年の創立以来の研究と技術により数々の特殊品種を開発し続けており、幅広い分野で未来のテクノロジーを支える素材としても注目を集め、今やなくてはならない材料としての地位を確立しました。また、これらの各品種は、厳格な管理の下で製造され、その品質システムはISO9001に適合し、皆様のご要望にお応えしています。</dd>
         </dl>
@@ -89,7 +100,7 @@
       </ul>
       <div class="feature__btn taC">
         <div class="balloon"><span class="balloon__txt">ゴーセノール™の基本物性について<br>より詳しく知りたい方はこちら</span></div>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>technical/gohsenol/" class="txt-link"><span>技術情報を見る</span><img src="<?php echo assets_path() ?>img/common/bg-more.svg" alt="技術情報を見る"></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>technical/category/gohsenol/" class="txt-link"><span>技術情報を見る</span><img src="<?php echo assets_path() ?>img/common/bg-more.svg" alt="技術情報を見る"></a>
       </div>
     </div>
   </section>
@@ -98,14 +109,14 @@
     <div class="containers">
       <h2 class="ttl-secondary cW">ゴーセノール™製品カタログ・<br class="sp-only">安全データシート（SDS）</h2>
       <div class="flex aiC jcC gap30 desc">
-        <figure class="desc__img" data-aos="fade-down-right"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt="ゴーセノール™"></figure>
+        <figure class="desc__img" data-aos="fade-down-right"><img src="<?php echo assets_path() ?>img/common/img-wp-gohsenol.png" alt="ゴーセノール™"></figure>
         <summary class="desc__box">
           <div class="desc__box--ttl"><small>一般ポリビニールアルコール</small><br>ゴーセノール™</div>
           <ul class="flex fS gap50 desc__box--list">
             <li>製品詳細カタログ</li>
             <li>安全データシート（SDS）</li>
           </ul>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/gohsenol/" class="more cW"><span>カタログ・SDS一覧を見る</span></a>
+          <a href="<?php echo esc_url(home_url('/')); ?>catalog/gohsenol/" class="more cW"><span>カタログ・SDS一覧を見る</span></a>
         </summary>
       </div>
     </div>
@@ -116,36 +127,52 @@
     <div class="containers">
       <h2 class="ttl-secondary">ゴーセノール™の使用用途</h2>
       <div class="lead">ゴーセノールは、その高い機能性から様々な<br class="sp-only">製品開発シーンで活用されています。</div>
-      <div class="flex item">
-        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="200">
-          <img src="<?php echo assets_path() ?>img/common/img-product01.jpg" alt="接着・バインダー">
-          <span>接着・バインダー</span>
-        </a>
-        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="300">
-          <img src="<?php echo assets_path() ?>img/common/img-product02.jpg" alt="紙加工">
-          <span>紙加工</span>
-        </a>
-        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="400">
-          <img src="<?php echo assets_path() ?>img/common/img-product03.jpg" alt="エマルジョン">
-          <span>エマルジョン</span>
-        </a>
-        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="500">
-          <img src="<?php echo assets_path() ?>img/common/img-product04.jpg" alt="懸濁剤">
-          <span>懸濁剤</span>
-        </a>
-        <a href="#" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="600">
-          <img src="<?php echo assets_path() ?>img/common/img-product05.jpg" alt="フィルム">
-          <span>フィルム</span>
-        </a>
-      </div>
-      <div class="product__btn taC"><a href="#" class="txt-link"><span>用途一覧を見る</span><img src="<?php echo assets_path() ?>img/common/bg-more.svg" alt="用途一覧を見る"></a></div>
+      <?php
+      $slug = "gohsenol";
+      $args = array(
+        'post_type' => 'usage',
+        'posts_per_page' => 10,
+        'paged' => $paged,
+        'has_password' => false,
+        'post_status' => 'publish',
+        'tax_query'  => array(
+          'relation'  => 'AND',
+          array(
+            'taxonomy' => 'usage_category',
+            'field' => 'slug',
+            'terms' => array($slug),
+            'operator' => 'IN',
+          ),
+        ),
+      );
+      // print_r($args);
+      $my_query = new WP_Query($args);
+      $max_page = $my_query->max_num_pages;
+      if ($my_query->have_posts()) :
+      ?>
+        <div class="flex item">
+          <?php
+          while ($my_query->have_posts()) :
+            $my_query->the_post();
+
+          ?>
+            <a href="<?php the_permalink(); ?>" class="flex aiC fS gap10 item__box" data-aos="flip-up" data-aos-delay="200">
+              <?php the_post_thumbnail(); ?>
+              <span><?php the_title(); ?></span>
+            </a>
+          <?php endwhile; ?>
+        </div>
+      <?php endif; ?>
+
+
+      <div class="product__btn taC"><a href="<?php echo esc_url(home_url('/')); ?>usage/" class="txt-link"><span>用途一覧を見る</span><img src="<?php echo assets_path() ?>img/common/bg-more.svg" alt="用途一覧を見る"></a></div>
     </div>
   </section>
 
   <section class="inquiry">
     <div class="containers">
       <h2 class="ttl-secondary cW">ゴーセノール™に関する<br>ご相談・お問合せはお気軽に<br class="sp-only">ご連絡ください。</h2>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="more"><span>ご相談・お見積り依頼はこちら</span></a>
+      <a href="<?php echo esc_url(home_url('/')); ?>contact/" class="more"><span>ご相談・お見積り依頼はこちら</span></a>
       <summary class="flex aiC jcC gap30 inquiry__box">
         <div class="inquiry__box--ttl">製品カタログ・安全データシートを<br class="sp-only">ご希望の方はこちら</div>
         <a href="#" class="more-square"><span data-text="PDFダウンロード">PDFダウンロード</span></a>

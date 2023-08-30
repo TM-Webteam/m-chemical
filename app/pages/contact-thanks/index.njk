@@ -1,0 +1,38 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="thanks">
+
+  <section>
+    <div class="containers">
+
+      <h1 class="ttl-primary-lower">ご相談・お見積り依頼いただき<br class="sp-only">ありがとうございました。</h1>
+
+      <div class="lead">後日、弊社営業担当より<br class="sp-only">ご連絡させていただきます。</div>
+
+      <div class="taC"><a href="/" class="txt-link"><span>トップページに戻る</span><img src="/assets/img/common/bg-more.svg" alt="トップページに戻る"></a></div>
+
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

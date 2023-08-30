@@ -12,6 +12,15 @@
     </div>
   </section>
 
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップ</a></li>
+        <li>メーカー企画・購買部門の皆様へ</li>
+      </ul>
+    </div>
+  </section>
+
   <section class="needs">
     <div class="containers">
       <h2 class="ttl-secondary">以下のようなニーズ・課題をお持ちではありませんか？</h2>

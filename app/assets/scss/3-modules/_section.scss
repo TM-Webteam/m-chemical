@@ -715,13 +715,13 @@
     }
     &--item {
       dt {
-        width: 210px;
+        width: 300px;
         @media #{$sp} {
           width: 100%;
         }
       }
       dd {
-        width: calc(100% - 210px - 50px);
+        width: calc(100% - 300px - 50px);
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -743,9 +743,9 @@
     color: #333;
     border: 1px solid #CCCCCC;
     border-radius: 20px;
-    width: 120px;
+    // width: 120px;
     @media #{$sp} {
-      width: 100px;
+      // width: 100px;
     }
   }
 }
@@ -790,20 +790,25 @@
         margin-bottom: 5px;
       }
       &--ttl {
-        font-size: 26px;
+        font-size: 24px;
         font-weight: bold;
-        
         margin-bottom: 40px;
         @media #{$sp} {
-          font-size: 18px;
+          font-size: 16px;
           margin-bottom: 20px;
         }
       }
       &--img {
         width: 90%;
         margin: 0 auto 40px;
+        text-align: center;
         @media #{$sp} {
           margin-bottom: 20px;
+        }
+        img {
+          height: 195px;
+          width: auto;
+          object-fit: contain;
         }
       }
       .more-dl {
@@ -871,6 +876,7 @@
       display: block;
       width: calc(100% / 3 - 20px);
       box-shadow: 0 0 10px rgba(0,0,0,0.16);
+      background: #fff;
       position: relative;
       .telop {
         display: inline-block;
@@ -887,7 +893,12 @@
         }
       }
       &--img {
-        
+        height: 200px;
+        overflow: hidden;
+        text-align: center;
+        @media #{$sp} {
+          height: 150px;
+        }
       }
     }
     &__box {
